@@ -1,3 +1,4 @@
+
 #Importing the required libraries 
 import os
 from PIL import Image, ImageOps 
