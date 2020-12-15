@@ -1,12 +1,19 @@
+#This code is merely meant to show how we obtained the bee pictures
+
+#We searched, resized and downloaded 1800 flickr bee pictures to then use further
+
+#Importing the relevant libraries
 import requests
 from PIL import Image
 from flickrapi import FlickrAPI
 from io import BytesIO
 
-FLICKR_PUBLIC = 'e6d48ffb62699db7c179713e43c19298'
-FLICKR_SECRET = 'd9bd450e64e0b18e'
+#Below refers to the Flickr API Keys. When creating an account we received them (removed from here since they are private)
+FLICKR_PUBLIC = '*****************************'
+FLICKR_SECRET = '***************'
 
-path = r'C:\Users\Antonia Unger\Desktop\Projects\an-an-uff-python\test\flickr_biene\''
+#Folder path (unique to user, in this case Nikolas Unger)
+path = r'C:\Users\Nikolas Unger\Desktop\Projects\hsg-mosaic-python\test\flickr_biene\''
   
 def fetch_images(search):
     flickr = FlickrAPI(FLICKR_PUBLIC, FLICKR_SECRET, format='parsed-json')
@@ -35,4 +42,6 @@ def fetch_images(search):
             print('processed so far...' + str(count))
         count += 1
 
+        
+#Execute the function for search term "bee"        
 fetch_images('bee')
