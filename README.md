@@ -21,9 +21,11 @@ Note: It is not necessary to download and resize all the pictures. Downloading o
 
 To download and resize pictures:
 1.	Start Download&Resize.py
+2.	…
 
 To create the mosaic:
 1.	Start Create_Moaic.py
+2.	…
 
 Exemplary outputs can be found in the folder “Outputs”.
 
