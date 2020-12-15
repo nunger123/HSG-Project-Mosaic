@@ -31,6 +31,7 @@ Exemplary outputs can be found in the folder “Outputs”.
 
 
 ***Thanks for your interest***
+
 To understand the single lines in the code please read through the comments. Should you have any questions, do not hesitate to contact nikolas.unger@student.unisg.ch or moritz.kaufhold@student.unisg.ch.
 
 Hope you enjoy the project,
