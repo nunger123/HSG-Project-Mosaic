@@ -1,5 +1,4 @@
-
-#Importing the required libraries 
+#Importing the required libraries
 import os
 from PIL import Image, ImageOps 
 import numpy as np 
@@ -23,7 +22,7 @@ def splitImage(image, size):
   w, h = int(image.size[0]/n), int(image.size[1]/m) 
   imgs = [] 
   for j in range(m): 
-    for i in range(n): 
+    for i in range(n):
       imgs.append(image.crop((i*w, j*h, (i+1)*w, (j+1)*h))) 
   return imgs 
   
@@ -86,10 +85,10 @@ def main():
   output_images = [] 
 
   #Inputs, file names
-  target_image = 'target_image.png'
+  target_image = 'Colour_Spectrum_Target.png'
   input_folder = 'Bees'
-  output_filename = 'BeeMosaic3.jpg'
-  grid_size = (60, 60)
+  output_filename = 'Output.jpg'
+  grid_size = (40, 40)
 
   # read inputs
   target_image = Image.open(target_image) 
@@ -116,10 +115,10 @@ def main():
     if count > 0 and count % 100 == 0: 
       print('processed %d so far...' %(count)) 
     count += 1
-    #avgs[match_index] = [] #so we dont have doubles of input images
+    avgs[match_index] = [] #so we dont have doubles of input images
 
   mosaic = createMosaic(output_images, grid_size) 
   mosaic.save(output_filename, 'PNG') 
 
 if __name__ == '__main__': 
-  main() 
+  main()
